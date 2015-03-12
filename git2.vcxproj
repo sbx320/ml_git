@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A880B3B1-7997-4DAD-AE30-21E0D13BD768}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>git2</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">build/$(ProjectName))/$(Configuration)/</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">git2</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">git2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">build/$(ProjectName))/$(Configuration)/</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">git2</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">git2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin/</OutDir>
+    <IntDir>build/$(ProjectName))/$(Configuration)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin/</OutDir>
+    <IntDir>build/$(ProjectName))/$(Configuration)/</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>precompiled.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;GIT_WINHTTP;WIN32_SHA1;NO_VIZ;STDC;NO_GZIP;_FILE_OFFSET_BITS=64;WIN32;_WIN32_WINNT=0x0501;GIT_ARCH_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;GIT_WINHTTP;WIN32_SHA1;NO_VIZ;STDC;NO_GZIP;_FILE_OFFSET_BITS=64;WIN32;_WIN32_WINNT=0x0501;GIT_ARCH_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>precompiled.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;GIT_WINHTTP;WIN32_SHA1;NO_VIZ;STDC;NO_GZIP;_FILE_OFFSET_BITS=64;WIN32;_WIN32_WINNT=0x0501;GIT_ARCH_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;GIT_WINHTTP;WIN32_SHA1;NO_VIZ;STDC;NO_GZIP;_FILE_OFFSET_BITS=64;WIN32;_WIN32_WINNT=0x0501;GIT_ARCH_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>precompiled.h</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;GIT_WINHTTP;WIN32_SHA1;NO_VIZ;STDC;NO_GZIP;_FILE_OFFSET_BITS=64;WIN32;_WIN32_WINNT=0x0501;GIT_ARCH_32;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;GIT_WINHTTP;WIN32_SHA1;NO_VIZ;STDC;NO_GZIP;_FILE_OFFSET_BITS=64;WIN32;_WIN32_WINNT=0x0501;GIT_ARCH_32;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>precompiled.h</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;GIT_WINHTTP;WIN32_SHA1;NO_VIZ;STDC;NO_GZIP;_FILE_OFFSET_BITS=64;WIN32;_WIN32_WINNT=0x0501;GIT_ARCH_32;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;GIT_WINHTTP;WIN32_SHA1;NO_VIZ;STDC;NO_GZIP;_FILE_OFFSET_BITS=64;WIN32;_WIN32_WINNT=0x0501;GIT_ARCH_32;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\libgit2\src;$(SolutionDir)vendor\libgit2\include;$(SolutionDir)vendor\libgit2\deps\http-parser;$(SolutionDir)vendor\libgit2\deps\regex;$(SolutionDir)vendor\libgit2\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="vendor\libgit2\include\git2.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\annotated_commit.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\attr.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\blame.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\blob.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\branch.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\buffer.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\checkout.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\cherrypick.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\clone.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\commit.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\common.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\config.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\cred_helpers.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\describe.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\diff.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\errors.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\filter.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\global.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\graph.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\ignore.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\index.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\indexer.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\inttypes.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\merge.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\message.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\net.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\notes.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\object.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\odb.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\odb_backend.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\oid.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\oidarray.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\pack.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\patch.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\pathspec.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\push.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\rebase.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\refdb.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\reflog.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\refs.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\refspec.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\remote.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\repository.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\reset.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\revert.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\revparse.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\revwalk.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\signature.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\stash.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\status.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\stdint.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\strarray.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\submodule.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\tag.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\trace.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\transaction.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\transport.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\tree.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\types.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\version.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\commit.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\config.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\diff.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\filter.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\hashsig.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\index.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\mempack.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\odb_backend.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\openssl.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\refdb_backend.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\reflog.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\refs.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\repository.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\stream.h" />
+    <ClInclude Include="vendor\libgit2\include\git2\sys\transport.h" />
+    <ClInclude Include="vendor\libgit2\src\annotated_commit.h" />
+    <ClInclude Include="vendor\libgit2\src\array.h" />
+    <ClInclude Include="vendor\libgit2\src\attr.h" />
+    <ClInclude Include="vendor\libgit2\src\attrcache.h" />
+    <ClInclude Include="vendor\libgit2\src\attr_file.h" />
+    <ClInclude Include="vendor\libgit2\src\bitvec.h" />
+    <ClInclude Include="vendor\libgit2\src\blame.h" />
+    <ClInclude Include="vendor\libgit2\src\blame_git.h" />
+    <ClInclude Include="vendor\libgit2\src\blob.h" />
+    <ClInclude Include="vendor\libgit2\src\branch.h" />
+    <ClInclude Include="vendor\libgit2\src\buffer.h" />
+    <ClInclude Include="vendor\libgit2\src\buf_text.h" />
+    <ClInclude Include="vendor\libgit2\src\cache.h" />
+    <ClInclude Include="vendor\libgit2\src\cc-compat.h" />
+    <ClInclude Include="vendor\libgit2\src\checkout.h" />
+    <ClInclude Include="vendor\libgit2\src\clone.h" />
+    <ClInclude Include="vendor\libgit2\src\commit.h" />
+    <ClInclude Include="vendor\libgit2\src\commit_list.h" />
+    <ClInclude Include="vendor\libgit2\src\common.h" />
+    <ClInclude Include="vendor\libgit2\src\config.h" />
+    <ClInclude Include="vendor\libgit2\src\config_file.h" />
+    <ClInclude Include="vendor\libgit2\src\delta-apply.h" />
+    <ClInclude Include="vendor\libgit2\src\delta.h" />
+    <ClInclude Include="vendor\libgit2\src\diff.h" />
+    <ClInclude Include="vendor\libgit2\src\diff_driver.h" />
+    <ClInclude Include="vendor\libgit2\src\diff_file.h" />
+    <ClInclude Include="vendor\libgit2\src\diff_patch.h" />
+    <ClInclude Include="vendor\libgit2\src\diff_xdiff.h" />
+    <ClInclude Include="vendor\libgit2\src\fetch.h" />
+    <ClInclude Include="vendor\libgit2\src\fetchhead.h" />
+    <ClInclude Include="vendor\libgit2\src\filebuf.h" />
+    <ClInclude Include="vendor\libgit2\src\fileops.h" />
+    <ClInclude Include="vendor\libgit2\src\filter.h" />
+    <ClInclude Include="vendor\libgit2\src\fnmatch.h" />
+    <ClInclude Include="vendor\libgit2\src\global.h" />
+    <ClInclude Include="vendor\libgit2\src\hash.h" />
+    <ClInclude Include="vendor\libgit2\src\ignore.h" />
+    <ClInclude Include="vendor\libgit2\src\index.h" />
+    <ClInclude Include="vendor\libgit2\src\integer.h" />
+    <ClInclude Include="vendor\libgit2\src\iterator.h" />
+    <ClInclude Include="vendor\libgit2\src\khash.h" />
+    <ClInclude Include="vendor\libgit2\src\map.h" />
+    <ClInclude Include="vendor\libgit2\src\merge.h" />
+    <ClInclude Include="vendor\libgit2\src\merge_file.h" />
+    <ClInclude Include="vendor\libgit2\src\message.h" />
+    <ClInclude Include="vendor\libgit2\src\mwindow.h" />
+    <ClInclude Include="vendor\libgit2\src\netops.h" />
+    <ClInclude Include="vendor\libgit2\src\notes.h" />
+    <ClInclude Include="vendor\libgit2\src\object.h" />
+    <ClInclude Include="vendor\libgit2\src\odb.h" />
+    <ClInclude Include="vendor\libgit2\src\offmap.h" />
+    <ClInclude Include="vendor\libgit2\src\oid.h" />
+    <ClInclude Include="vendor\libgit2\src\oidarray.h" />
+    <ClInclude Include="vendor\libgit2\src\oidmap.h" />
+    <ClInclude Include="vendor\libgit2\src\openssl_stream.h" />
+    <ClInclude Include="vendor\libgit2\src\pack-objects.h" />
+    <ClInclude Include="vendor\libgit2\src\pack.h" />
+    <ClInclude Include="vendor\libgit2\src\path.h" />
+    <ClInclude Include="vendor\libgit2\src\pathspec.h" />
+    <ClInclude Include="vendor\libgit2\src\pool.h" />
+    <ClInclude Include="vendor\libgit2\src\posix.h" />
+    <ClInclude Include="vendor\libgit2\src\pqueue.h" />
+    <ClInclude Include="vendor\libgit2\src\push.h" />
+    <ClInclude Include="vendor\libgit2\src\refdb.h" />
+    <ClInclude Include="vendor\libgit2\src\refdb_fs.h" />
+    <ClInclude Include="vendor\libgit2\src\reflog.h" />
+    <ClInclude Include="vendor\libgit2\src\refs.h" />
+    <ClInclude Include="vendor\libgit2\src\refspec.h" />
+    <ClInclude Include="vendor\libgit2\src\remote.h" />
+    <ClInclude Include="vendor\libgit2\src\repository.h" />
+    <ClInclude Include="vendor\libgit2\src\repo_template.h" />
+    <ClInclude Include="vendor\libgit2\src\revwalk.h" />
+    <ClInclude Include="vendor\libgit2\src\sha1_lookup.h" />
+    <ClInclude Include="vendor\libgit2\src\signature.h" />
+    <ClInclude Include="vendor\libgit2\src\socket_stream.h" />
+    <ClInclude Include="vendor\libgit2\src\sortedcache.h" />
+    <ClInclude Include="vendor\libgit2\src\status.h" />
+    <ClInclude Include="vendor\libgit2\src\stream.h" />
+    <ClInclude Include="vendor\libgit2\src\strmap.h" />
+    <ClInclude Include="vendor\libgit2\src\strnlen.h" />
+    <ClInclude Include="vendor\libgit2\src\submodule.h" />
+    <ClInclude Include="vendor\libgit2\src\sysdir.h" />
+    <ClInclude Include="vendor\libgit2\src\tag.h" />
+    <ClInclude Include="vendor\libgit2\src\thread-utils.h" />
+    <ClInclude Include="vendor\libgit2\src\trace.h" />
+    <ClInclude Include="vendor\libgit2\src\tree-cache.h" />
+    <ClInclude Include="vendor\libgit2\src\tree.h" />
+    <ClInclude Include="vendor\libgit2\src\userdiff.h" />
+    <ClInclude Include="vendor\libgit2\src\util.h" />
+    <ClInclude Include="vendor\libgit2\src\vector.h" />
+    <ClInclude Include="vendor\libgit2\src\zstream.h" />
+    <ClInclude Include="vendor\libgit2\src\transports\auth.h" />
+    <ClInclude Include="vendor\libgit2\src\transports\auth_negotiate.h" />
+    <ClInclude Include="vendor\libgit2\src\transports\cred.h" />
+    <ClInclude Include="vendor\libgit2\src\transports\smart.h" />
+    <ClInclude Include="vendor\libgit2\src\xdiff\xdiff.h" />
+    <ClInclude Include="vendor\libgit2\src\xdiff\xdiffi.h" />
+    <ClInclude Include="vendor\libgit2\src\xdiff\xemit.h" />
+    <ClInclude Include="vendor\libgit2\src\xdiff\xinclude.h" />
+    <ClInclude Include="vendor\libgit2\src\xdiff\xmacros.h" />
+    <ClInclude Include="vendor\libgit2\src\xdiff\xprepare.h" />
+    <ClInclude Include="vendor\libgit2\src\xdiff\xtypes.h" />
+    <ClInclude Include="vendor\libgit2\src\xdiff\xutils.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\dir.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\error.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\findfile.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\mingw-compat.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\msvc-compat.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\path_w32.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\posix.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\precompiled.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\pthread.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\reparse.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\utf-conv.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\version.h" />
+    <ClInclude Include="vendor\libgit2\src\win32\w32_util.h" />
+    <ClInclude Include="vendor\libgit2\deps\zlib\crc32.h" />
+    <ClInclude Include="vendor\libgit2\deps\zlib\deflate.h" />
+    <ClInclude Include="vendor\libgit2\deps\zlib\inffast.h" />
+    <ClInclude Include="vendor\libgit2\deps\zlib\inffixed.h" />
+    <ClInclude Include="vendor\libgit2\deps\zlib\inflate.h" />
+    <ClInclude Include="vendor\libgit2\deps\zlib\inftrees.h" />
+    <ClInclude Include="vendor\libgit2\deps\zlib\trees.h" />
+    <ClInclude Include="vendor\libgit2\deps\zlib\zconf.h" />
+    <ClInclude Include="vendor\libgit2\deps\zlib\zlib.h" />
+    <ClInclude Include="vendor\libgit2\deps\zlib\zutil.h" />
+    <ClInclude Include="vendor\libgit2\deps\http-parser\http_parser.h" />
+    <ClCompile Include="vendor\libgit2\src\annotated_commit.c" />
+    <ClCompile Include="vendor\libgit2\src\attr.c" />
+    <ClCompile Include="vendor\libgit2\src\attrcache.c" />
+    <ClCompile Include="vendor\libgit2\src\attr_file.c" />
+    <ClCompile Include="vendor\libgit2\src\blame.c" />
+    <ClCompile Include="vendor\libgit2\src\blame_git.c" />
+    <ClCompile Include="vendor\libgit2\src\blob.c" />
+    <ClCompile Include="vendor\libgit2\src\branch.c" />
+    <ClCompile Include="vendor\libgit2\src\buffer.c" />
+    <ClCompile Include="vendor\libgit2\src\buf_text.c" />
+    <ClCompile Include="vendor\libgit2\src\cache.c" />
+    <ClCompile Include="vendor\libgit2\src\checkout.c" />
+    <ClCompile Include="vendor\libgit2\src\cherrypick.c" />
+    <ClCompile Include="vendor\libgit2\src\clone.c" />
+    <ClCompile Include="vendor\libgit2\src\commit.c" />
+    <ClCompile Include="vendor\libgit2\src\commit_list.c" />
+    <ClCompile Include="vendor\libgit2\src\config.c" />
+    <ClCompile Include="vendor\libgit2\src\config_cache.c" />
+    <ClCompile Include="vendor\libgit2\src\config_file.c" />
+    <ClCompile Include="vendor\libgit2\src\crlf.c" />
+    <ClCompile Include="vendor\libgit2\src\date.c" />
+    <ClCompile Include="vendor\libgit2\src\delta-apply.c" />
+    <ClCompile Include="vendor\libgit2\src\delta.c" />
+    <ClCompile Include="vendor\libgit2\src\describe.c" />
+    <ClCompile Include="vendor\libgit2\src\diff.c" />
+    <ClCompile Include="vendor\libgit2\src\diff_driver.c" />
+    <ClCompile Include="vendor\libgit2\src\diff_file.c" />
+    <ClCompile Include="vendor\libgit2\src\diff_patch.c" />
+    <ClCompile Include="vendor\libgit2\src\diff_print.c" />
+    <ClCompile Include="vendor\libgit2\src\diff_stats.c" />
+    <ClCompile Include="vendor\libgit2\src\diff_tform.c" />
+    <ClCompile Include="vendor\libgit2\src\diff_xdiff.c" />
+    <ClCompile Include="vendor\libgit2\src\errors.c" />
+    <ClCompile Include="vendor\libgit2\src\fetch.c" />
+    <ClCompile Include="vendor\libgit2\src\fetchhead.c" />
+    <ClCompile Include="vendor\libgit2\src\filebuf.c" />
+    <ClCompile Include="vendor\libgit2\src\fileops.c" />
+    <ClCompile Include="vendor\libgit2\src\filter.c" />
+    <ClCompile Include="vendor\libgit2\src\fnmatch.c" />
+    <ClCompile Include="vendor\libgit2\src\global.c" />
+    <ClCompile Include="vendor\libgit2\src\graph.c" />
+    <ClCompile Include="vendor\libgit2\src\hash.c" />
+    <ClCompile Include="vendor\libgit2\src\hashsig.c" />
+    <ClCompile Include="vendor\libgit2\src\ident.c" />
+    <ClCompile Include="vendor\libgit2\src\ignore.c" />
+    <ClCompile Include="vendor\libgit2\src\index.c" />
+    <ClCompile Include="vendor\libgit2\src\indexer.c" />
+    <ClCompile Include="vendor\libgit2\src\iterator.c" />
+    <ClCompile Include="vendor\libgit2\src\merge.c" />
+    <ClCompile Include="vendor\libgit2\src\merge_file.c" />
+    <ClCompile Include="vendor\libgit2\src\message.c" />
+    <ClCompile Include="vendor\libgit2\src\mwindow.c" />
+    <ClCompile Include="vendor\libgit2\src\netops.c" />
+    <ClCompile Include="vendor\libgit2\src\notes.c" />
+    <ClCompile Include="vendor\libgit2\src\object.c" />
+    <ClCompile Include="vendor\libgit2\src\object_api.c" />
+    <ClCompile Include="vendor\libgit2\src\odb.c" />
+    <ClCompile Include="vendor\libgit2\src\odb_loose.c" />
+    <ClCompile Include="vendor\libgit2\src\odb_mempack.c" />
+    <ClCompile Include="vendor\libgit2\src\odb_pack.c" />
+    <ClCompile Include="vendor\libgit2\src\oid.c" />
+    <ClCompile Include="vendor\libgit2\src\oidarray.c" />
+    <ClCompile Include="vendor\libgit2\src\openssl_stream.c" />
+    <ClCompile Include="vendor\libgit2\src\pack-objects.c" />
+    <ClCompile Include="vendor\libgit2\src\pack.c" />
+    <ClCompile Include="vendor\libgit2\src\path.c" />
+    <ClCompile Include="vendor\libgit2\src\pathspec.c" />
+    <ClCompile Include="vendor\libgit2\src\pool.c" />
+    <ClCompile Include="vendor\libgit2\src\posix.c" />
+    <ClCompile Include="vendor\libgit2\src\pqueue.c" />
+    <ClCompile Include="vendor\libgit2\src\push.c" />
+    <ClCompile Include="vendor\libgit2\src\rebase.c" />
+    <ClCompile Include="vendor\libgit2\src\refdb.c" />
+    <ClCompile Include="vendor\libgit2\src\refdb_fs.c" />
+    <ClCompile Include="vendor\libgit2\src\reflog.c" />
+    <ClCompile Include="vendor\libgit2\src\refs.c" />
+    <ClCompile Include="vendor\libgit2\src\refspec.c" />
+    <ClCompile Include="vendor\libgit2\src\remote.c" />
+    <ClCompile Include="vendor\libgit2\src\repository.c" />
+    <ClCompile Include="vendor\libgit2\src\reset.c" />
+    <ClCompile Include="vendor\libgit2\src\revert.c" />
+    <ClCompile Include="vendor\libgit2\src\revparse.c" />
+    <ClCompile Include="vendor\libgit2\src\revwalk.c" />
+    <ClCompile Include="vendor\libgit2\src\settings.c" />
+    <ClCompile Include="vendor\libgit2\src\sha1_lookup.c" />
+    <ClCompile Include="vendor\libgit2\src\signature.c" />
+    <ClCompile Include="vendor\libgit2\src\socket_stream.c" />
+    <ClCompile Include="vendor\libgit2\src\sortedcache.c" />
+    <ClCompile Include="vendor\libgit2\src\stash.c" />
+    <ClCompile Include="vendor\libgit2\src\status.c" />
+    <ClCompile Include="vendor\libgit2\src\strmap.c" />
+    <ClCompile Include="vendor\libgit2\src\submodule.c" />
+    <ClCompile Include="vendor\libgit2\src\sysdir.c" />
+    <ClCompile Include="vendor\libgit2\src\tag.c" />
+    <ClCompile Include="vendor\libgit2\src\thread-utils.c" />
+    <ClCompile Include="vendor\libgit2\src\trace.c" />
+    <ClCompile Include="vendor\libgit2\src\transaction.c" />
+    <ClCompile Include="vendor\libgit2\src\transport.c" />
+    <ClCompile Include="vendor\libgit2\src\tree-cache.c" />
+    <ClCompile Include="vendor\libgit2\src\tree.c" />
+    <ClCompile Include="vendor\libgit2\src\tsort.c" />
+    <ClCompile Include="vendor\libgit2\src\util.c" />
+    <ClCompile Include="vendor\libgit2\src\vector.c" />
+    <ClCompile Include="vendor\libgit2\src\zstream.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\auth.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\auth_negotiate.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\cred.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\cred_helpers.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\git.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\http.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\local.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\smart.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\smart_pkt.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\smart_protocol.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\ssh.c" />
+    <ClCompile Include="vendor\libgit2\src\transports\winhttp.c" />
+    <ClCompile Include="vendor\libgit2\src\xdiff\xdiffi.c" />
+    <ClCompile Include="vendor\libgit2\src\xdiff\xemit.c" />
+    <ClCompile Include="vendor\libgit2\src\xdiff\xhistogram.c" />
+    <ClCompile Include="vendor\libgit2\src\xdiff\xmerge.c" />
+    <ClCompile Include="vendor\libgit2\src\xdiff\xpatience.c" />
+    <ClCompile Include="vendor\libgit2\src\xdiff\xprepare.c" />
+    <ClCompile Include="vendor\libgit2\src\xdiff\xutils.c" />
+    <ClCompile Include="vendor\libgit2\src\win32\dir.c" />
+    <ClCompile Include="vendor\libgit2\src\win32\error.c" />
+    <ClCompile Include="vendor\libgit2\src\win32\findfile.c" />
+    <ClCompile Include="vendor\libgit2\src\win32\map.c" />
+    <ClCompile Include="vendor\libgit2\src\win32\path_w32.c" />
+    <ClCompile Include="vendor\libgit2\src\win32\posix_w32.c" />
+    <ClCompile Include="vendor\libgit2\src\win32\precompiled.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\pthread.c" />
+    <ClCompile Include="vendor\libgit2\src\win32\utf-conv.c" />
+    <ClCompile Include="vendor\libgit2\src\win32\w32_util.c" />
+    <ClCompile Include="vendor\libgit2\deps\zlib\adler32.c" />
+    <ClCompile Include="vendor\libgit2\deps\zlib\crc32.c" />
+    <ClCompile Include="vendor\libgit2\deps\zlib\deflate.c" />
+    <ClCompile Include="vendor\libgit2\deps\zlib\infback.c" />
+    <ClCompile Include="vendor\libgit2\deps\zlib\inffast.c" />
+    <ClCompile Include="vendor\libgit2\deps\zlib\inflate.c" />
+    <ClCompile Include="vendor\libgit2\deps\zlib\inftrees.c" />
+    <ClCompile Include="vendor\libgit2\deps\zlib\trees.c" />
+    <ClCompile Include="vendor\libgit2\deps\zlib\zutil.c" />
+    <ClCompile Include="vendor\libgit2\deps\http-parser\http_parser.c" />
+    <ClCompile Include="vendor\libgit2\deps\regex\regex.c" />
+    <ClCompile Include="vendor\libgit2\src\hash\hash_win32.c" />
+    <ResourceCompile Include="vendor\libgit2\src\win32\git2.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

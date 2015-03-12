@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="vendor\libgit2\src\annotated_commit.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\attr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\attrcache.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\attr_file.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\blame.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\blame_git.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\blob.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\branch.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\buffer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\buf_text.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\cache.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\checkout.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\cherrypick.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\clone.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\commit.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\commit_list.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\config.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\config_cache.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\config_file.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\crlf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\date.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\delta-apply.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\delta.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\describe.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\diff.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\diff_driver.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\diff_file.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\diff_patch.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\diff_print.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\diff_stats.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\diff_tform.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\diff_xdiff.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\errors.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\fetch.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\fetchhead.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\filebuf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\fileops.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\filter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\fnmatch.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\global.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\graph.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\hash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\hashsig.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\ident.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\ignore.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\index.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\indexer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\iterator.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\merge.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\merge_file.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\message.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\mwindow.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\netops.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\notes.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\object.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\object_api.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\odb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\odb_loose.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\odb_mempack.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\odb_pack.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\oid.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\oidarray.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\openssl_stream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\pack-objects.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\pack.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\path.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\pathspec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\pool.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\posix.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\pqueue.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\push.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\rebase.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\refdb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\refdb_fs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\reflog.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\refs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\refspec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\remote.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\repository.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\reset.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\revert.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\revparse.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\revwalk.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\settings.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\sha1_lookup.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\signature.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\socket_stream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\sortedcache.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\stash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\status.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\strmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\submodule.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\sysdir.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\tag.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\thread-utils.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\trace.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transaction.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transport.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\tree-cache.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\tree.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\tsort.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\util.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\vector.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\zstream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\auth.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\auth_negotiate.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\cred.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\cred_helpers.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\git.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\http.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\local.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\smart.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\smart_pkt.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\smart_protocol.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\ssh.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\transports\winhttp.c">
+      <Filter>src\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\xdiff\xdiffi.c">
+      <Filter>src\xdiff</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\xdiff\xemit.c">
+      <Filter>src\xdiff</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\xdiff\xhistogram.c">
+      <Filter>src\xdiff</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\xdiff\xmerge.c">
+      <Filter>src\xdiff</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\xdiff\xpatience.c">
+      <Filter>src\xdiff</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\xdiff\xprepare.c">
+      <Filter>src\xdiff</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\xdiff\xutils.c">
+      <Filter>src\xdiff</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\dir.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\error.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\findfile.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\map.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\path_w32.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\posix_w32.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\precompiled.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\pthread.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\utf-conv.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\win32\w32_util.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\zlib\adler32.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\zlib\crc32.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\zlib\deflate.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\zlib\infback.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\zlib\inffast.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\zlib\inflate.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\zlib\inftrees.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\zlib\trees.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\zlib\zutil.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\http-parser\http_parser.c">
+      <Filter>deps\http-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\deps\regex\regex.c">
+      <Filter>deps\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\libgit2\src\hash\hash_win32.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vendor\libgit2\include\git2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\annotated_commit.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\attr.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\blame.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\blob.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\branch.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\buffer.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\checkout.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\cherrypick.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\clone.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\commit.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\common.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\config.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\cred_helpers.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\describe.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\diff.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\errors.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\filter.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\global.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\graph.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\ignore.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\index.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\indexer.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\inttypes.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\merge.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\message.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\net.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\notes.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\object.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\odb.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\odb_backend.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\oid.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\oidarray.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\pack.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\patch.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\pathspec.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\push.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\rebase.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\refdb.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\reflog.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\refs.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\refspec.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\remote.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\repository.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\reset.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\revert.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\revparse.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\revwalk.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\signature.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\stash.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\status.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\stdint.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\strarray.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\submodule.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\tag.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\trace.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\transaction.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\transport.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\tree.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\types.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\version.h">
+      <Filter>include\git2</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\commit.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\config.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\diff.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\filter.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\hashsig.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\index.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\mempack.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\odb_backend.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\openssl.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\refdb_backend.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\reflog.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\refs.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\repository.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\stream.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\include\git2\sys\transport.h">
+      <Filter>include\git2\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\annotated_commit.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\array.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\attr.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\attrcache.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\attr_file.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\bitvec.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\blame.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\blame_git.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\blob.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\branch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\buffer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\buf_text.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\cache.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\cc-compat.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\checkout.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\clone.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\commit.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\commit_list.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\common.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\config_file.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\delta-apply.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\delta.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\diff.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\diff_driver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\diff_file.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\diff_patch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\diff_xdiff.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\fetch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\fetchhead.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\filebuf.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\fileops.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\filter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\fnmatch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\global.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\hash.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\ignore.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\index.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\integer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\iterator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\khash.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\map.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\merge.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\merge_file.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\message.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\mwindow.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\netops.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\notes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\object.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\odb.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\offmap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\oid.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\oidarray.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\oidmap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\openssl_stream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\pack-objects.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\pack.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\path.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\pathspec.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\pool.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\posix.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\pqueue.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\push.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\refdb.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\refdb_fs.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\reflog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\refs.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\refspec.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\remote.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\repository.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\repo_template.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\revwalk.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\sha1_lookup.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\signature.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\socket_stream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\sortedcache.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\status.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\stream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\strmap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\strnlen.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\submodule.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\sysdir.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\tag.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\thread-utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\trace.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\tree-cache.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\tree.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\userdiff.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\util.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\vector.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\zstream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\transports\auth.h">
+      <Filter>src\transports</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\transports\auth_negotiate.h">
+      <Filter>src\transports</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\transports\cred.h">
+      <Filter>src\transports</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\transports\smart.h">
+      <Filter>src\transports</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\xdiff\xdiff.h">
+      <Filter>src\xdiff</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\xdiff\xdiffi.h">
+      <Filter>src\xdiff</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\xdiff\xemit.h">
+      <Filter>src\xdiff</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\xdiff\xinclude.h">
+      <Filter>src\xdiff</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\xdiff\xmacros.h">
+      <Filter>src\xdiff</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\xdiff\xprepare.h">
+      <Filter>src\xdiff</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\xdiff\xtypes.h">
+      <Filter>src\xdiff</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\xdiff\xutils.h">
+      <Filter>src\xdiff</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\dir.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\error.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\findfile.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\mingw-compat.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\msvc-compat.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\path_w32.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\posix.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\precompiled.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\pthread.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\reparse.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\utf-conv.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\version.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\src\win32\w32_util.h">
+      <Filter>src\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\zlib\crc32.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\zlib\deflate.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\zlib\inffast.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\zlib\inffixed.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\zlib\inflate.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\zlib\inftrees.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\zlib\trees.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\zlib\zconf.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\zlib\zlib.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\zlib\zutil.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\libgit2\deps\http-parser\http_parser.h">
+      <Filter>deps\http-parser</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vendor\libgit2\src\win32\git2.rc">
+      <Filter>src\win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include\git2">
+      <UniqueIdentifier>{60F9EB69-DAB6-4CA2-9AEF-67094D4A45F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\git2\sys">
+      <UniqueIdentifier>{E904704F-D4DF-4438-926D-00C1C549EE63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\transports">
+      <UniqueIdentifier>{CC3B219C-A92C-43AF-A83C-8B2B3CA8FCEC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\xdiff">
+      <UniqueIdentifier>{B8168D55-8BAF-4BFB-9C32-C206764FDFD6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\win32">
+      <UniqueIdentifier>{ADCA6B0E-469C-45BA-96BF-E1A57F2B1556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\hash">
+      <UniqueIdentifier>{67911793-17BD-4A71-B347-E6784392D7E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{301DBFEB-FED8-4F04-B4BD-8B77CCD9E9B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{FACF7949-6E6A-4681-9886-D76EF471088C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps">
+      <UniqueIdentifier>{E70DD50E-AC96-41C6-ABB3-DC204A14ABDE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\zlib">
+      <UniqueIdentifier>{C386508F-7857-4A7B-A36F-1C0B7195B3D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\http-parser">
+      <UniqueIdentifier>{1880CC08-672A-48B9-86DE-536B7FF146E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\regex">
+      <UniqueIdentifier>{10C4FB02-04AE-45C7-ACB4-911A2F276217}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

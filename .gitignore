@@ -31,6 +31,9 @@
 *.sdf
 *.suo
 *.opensdf
+*.vcxproj.user
+Debug/*
+ipch/*
 
 # build dir and bin dir
 bin/*
