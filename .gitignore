@@ -31,3 +31,7 @@
 *.sdf
 *.suo
 *.opensdf
+
+# build dir and bin dir
+bin/*
+build/*
