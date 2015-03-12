@@ -43,14 +43,16 @@
     <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>Debug\</OutDir>
-    <IntDir>Debug\</IntDir>
+    <OutDir>bin/</OutDir>
+    <IntDir>build/$(ProjectName)/$(Configuration)/</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)/lua/src;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>Release\</OutDir>
-    <IntDir>Release\</IntDir>
+    <OutDir>bin/</OutDir>
+    <IntDir>build/$(ProjectName)/$(Configuration)/</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)/lua/src;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -122,8 +124,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CFunctions.cpp" />
-    <ClCompile Include="CThread.cpp" />
-    <ClCompile Include="CThreadData.cpp" />
     <ClCompile Include="extra\CLuaArgument.cpp" />
     <ClCompile Include="extra\CLuaArguments.cpp" />
     <ClCompile Include="ml_git.cpp" />
@@ -135,8 +135,6 @@
     <ClInclude Include="..\..\vendor\lua\src\lualib.h" />
     <ClInclude Include="CFunctions.h" />
     <ClInclude Include="Common.h" />
-    <ClInclude Include="CThread.h" />
-    <ClInclude Include="CThreadData.h" />
     <ClInclude Include="extra\CLuaArgument.h" />
     <ClInclude Include="extra\CLuaArguments.h" />
     <ClInclude Include="include\ILuaModuleManager.h" />

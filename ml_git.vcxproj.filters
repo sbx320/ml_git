@@ -18,18 +18,12 @@
     <Filter Include="Header Files\include">
       <UniqueIdentifier>{649344db-c5b9-48c6-898c-bc673ed1d2c7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\vendor">
+      <UniqueIdentifier>{8a074fe1-566b-4967-9415-22d0bd2a7ad4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CFunctions.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CThread.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CThreadData.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ml_base.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="extra\CLuaArgument.cpp">
@@ -38,21 +32,15 @@
     <ClCompile Include="extra\CLuaArguments.cpp">
       <Filter>Source Files\extra</Filter>
     </ClCompile>
+    <ClCompile Include="ml_git.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Common.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CThread.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CThreadData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ml_base.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="extra\CLuaArgument.h">
@@ -75,6 +63,9 @@
     </ClInclude>
     <ClInclude Include="..\..\vendor\lua\src\lualib.h">
       <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_git.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
