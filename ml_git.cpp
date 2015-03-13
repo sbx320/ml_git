@@ -1,4 +1,5 @@
 #include "ml_git.h"
+#include "LuaVM.hpp"
 #include "git2.h"
 
 ILuaModuleManager10 *pModuleManager = NULL;
@@ -20,9 +21,9 @@ MTAEXPORT void RegisterFunctions ( lua_State * luaVM )
 {
     if ( pModuleManager && luaVM )
     {
-        pModuleManager->RegisterFunction ( luaVM, "gitClone", CFunctions::GitClone );
-        pModuleManager->RegisterFunction ( luaVM, "gitPull", CFunctions::GitPull );
-        pModuleManager->RegisterFunction ( luaVM, "gitPush", CFunctions::GitPush );
+        pModuleManager->RegisterFunction ( luaVM, "gitClone", LuaVM::LuaFunctionDispatcher<CFunctions::GitClone> );
+       // pModuleManager->RegisterFunction ( luaVM, "gitPull", LuaVM::LuaFunctionDispatcher<CFunctions::GitPull> );
+       // pModuleManager->RegisterFunction ( luaVM, "gitPush", LuaVM::LuaFunctionDispatcher<CFunctions::GitPush> );
     }
 }
 

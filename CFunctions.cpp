@@ -2,40 +2,24 @@
 #include "extra/CLuaArguments.h"
 #include "git2.h"
 
-int CFunctions::GitClone ( lua_State* luaVM )
+void CFunctions::GitClone ( LuaVM& luaVM )
 {
-    if ( !luaVM )
-        return 0;
+    std::string strUrl;
+    std::string strPath;
+    
+    luaVM.GetParam ( strUrl );
+    luaVM.GetParam ( strPath );
 
-    if ( !lua_type ( luaVM, -1 ) ||
-         !lua_type ( luaVM, -2 ))
-    {
-        lua_pushboolean ( luaVM, false );
-    }
-
-    auto url = lua_tostring ( luaVM, -1 );
-    auto path = lua_tostring ( luaVM, -2 );
+    if ( !luaVM.Good ( ) )
+        return;
 
     git_repository *repos;
     git_clone_options opt = GIT_CLONE_OPTIONS_INIT;
     
-    auto err = git_clone ( &repos, url, path, &opt );
+    auto err = git_clone ( &repos, strUrl.c_str(), strPath.c_str(), &opt );
 
-    if ( err == -1 )
-        lua_pushstring ( luaVM, giterr_last ( )->message );
+    if ( err < 0 )
+        luaVM.Push ( giterr_last ( )->message );
     else
-        lua_pushboolean ( luaVM, true );
-    return 1;
-}
-
-int CFunctions::GitPull( lua_State* luaVM )
-{
-    return 1;
-}
-
-
-
-int CFunctions::GitPush ( lua_State* luaVM )
-{
-    return 0;
+        luaVM.Push ( true );
 }
