@@ -22,8 +22,8 @@ MTAEXPORT void RegisterFunctions ( lua_State * luaVM )
     if ( pModuleManager && luaVM )
     {
         pModuleManager->RegisterFunction ( luaVM, "gitClone", LuaVM::LuaFunctionDispatcher<CFunctions::GitClone> );
-       // pModuleManager->RegisterFunction ( luaVM, "gitPull", LuaVM::LuaFunctionDispatcher<CFunctions::GitPull> );
-       // pModuleManager->RegisterFunction ( luaVM, "gitPush", LuaVM::LuaFunctionDispatcher<CFunctions::GitPush> );
+        pModuleManager->RegisterFunction ( luaVM, "gitPull", LuaVM::LuaFunctionDispatcher<CFunctions::GitPull> );
+        pModuleManager->RegisterFunction ( luaVM, "gitHeadId", LuaVM::LuaFunctionDispatcher<CFunctions::GitGetHeadId> );
     }
 }
 

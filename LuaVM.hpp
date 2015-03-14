@@ -36,7 +36,6 @@ public:
     template<typename T>
     void GetParam ( T& e )
     {
-        stackDump(L);
         if ( hasError )
             return;
 
