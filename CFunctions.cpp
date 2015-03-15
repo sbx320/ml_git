@@ -31,6 +31,7 @@ void CFunctions::GitClone ( LuaVM& luaVM )
     git_clone_options opt = GIT_CLONE_OPTIONS_INIT;
     
     auto error = git_clone ( &repo, strUrl.c_str(), strPath.c_str(), &opt );
+    git_repository_free ( repo );
 
     if ( GitErrorCheck ( luaVM, error ) )
         return;
@@ -57,13 +58,19 @@ void CFunctions::GitPull ( LuaVM& luaVM )
     git_remote* remote;
     error = git_remote_lookup ( &remote, repo, "origin" );
     if ( GitErrorCheck ( luaVM, error ) )
+    {
+        git_repository_free ( repo );
         return;
+    }
 
     // Fetch changes from origin
     error = git_remote_fetch ( remote, NULL, NULL );
     if ( GitErrorCheck ( luaVM, error ) )
+    {
+        git_repository_free ( repo );
+        git_remote_free ( remote );
         return;
-
+    }
     // Merge changes
     // this is horrible
     std::vector<git_annotated_commit*> commits;
@@ -85,6 +92,15 @@ void CFunctions::GitPull ( LuaVM& luaVM )
     mergopts.file_favor = GIT_MERGE_FILE_FAVOR_THEIRS;
 
     error = git_merge ( repo, (const git_annotated_commit**)&commits [0], commits.size ( ), NULL, NULL );
+
+    for ( auto commit : commits )
+    {
+        git_annotated_commit_free ( commit );
+    }
+
+    git_repository_free ( repo );
+    git_remote_free ( remote );
+
     if ( GitErrorCheck ( luaVM, error ) )
         return;
 
@@ -107,6 +123,7 @@ void CFunctions::GitGetHeadId ( LuaVM& luaVM )
 
     git_oid head;
     error = git_reference_name_to_id ( &head, repo, "HEAD" );
+    git_repository_free ( repo );
     if ( GitErrorCheck ( luaVM, error ) )
         return;
 
